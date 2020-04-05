@@ -5,17 +5,28 @@
     "local_address": "127.0.0.1",
     "local_port": 1080,
 
-    "password": "m",
-    "method": "aes-128-ctr",
+    "password": "tWAbMbFXvyk2Hn9S",
+    "port_password": {
+        "1433": "tWAbMbFXvyk2Hn9S_1433",
+        "1521": "tWAbMbFXvyk2Hn9S_1521",
+        "1527": "tWAbMbFXvyk2Hn9S_1527",
+        "3306": "tWAbMbFXvyk2Hn9S_3306",
+        "3389": "tWAbMbFXvyk2Hn9S_3389",
+        "5000": "tWAbMbFXvyk2Hn9S_5000",
+        "5432": "tWAbMbFXvyk2Hn9S_5432",
+        "9092": "tWAbMbFXvyk2Hn9S_9092",
+        "27017": "tWAbMbFXvyk2Hn9S_27017"
+    },
+    "method": "aes-128-cfb",
     "protocol": "auth_aes128_md5",
-    "protocol_param": "",
-    "obfs": "tls1.2_ticket_auth_compatible",
-    "obfs_param": "",
+    "protocol_param": "skx",
+    "obfs": "tls1.2_ticket_auth",
+    "obfs_param": "skx",
     "speed_limit_per_con": 0,
     "speed_limit_per_user": 0,
 
-    "additional_ports" : {}, // only works under multi-user mode
-    "additional_ports_only" : false, // only works under multi-user mode
+    "additional_ports" : {},
+    "additional_ports_only" : false,
     "timeout": 120,
     "udp_timeout": 60,
     "dns_ipv6": false,
